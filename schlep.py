@@ -80,9 +80,9 @@ def main(stdscr):
             
     stdscr.clear()
     stdscr.refresh()
-    pad.addstr(header,COLOR_1|curses.A_UNDERLINE)
-    pad.addstr(2,0,"Hello!")        
-    pad.refresh(0,0,0,0,2,100)
+    stdscr.addstr(header,COLOR_1|curses.A_UNDERLINE)
+    stdscr.addstr(2,0,"Hello!")        
+    stdscr.refresh()
     
     stdscr.getch()
 
